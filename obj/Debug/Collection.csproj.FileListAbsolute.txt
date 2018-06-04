@@ -1,6 +1,0 @@
-c:\users\ssatish\documents\visual studio 2015\Projects\CustomStack\CustomStack\bin\Debug\CustomStack.exe.config
-c:\users\ssatish\documents\visual studio 2015\Projects\CustomStack\CustomStack\obj\Debug\CustomStack.exe
-c:\users\ssatish\documents\visual studio 2015\Projects\CustomStack\CustomStack\obj\Debug\CustomStack.pdb
-c:\users\ssatish\documents\visual studio 2015\Projects\CustomStack\CustomStack\bin\Debug\CustomStack.exe
-c:\users\ssatish\documents\visual studio 2015\Projects\CustomStack\CustomStack\bin\Debug\CustomStack.pdb
-c:\users\ssatish\documents\visual studio 2015\Projects\CustomStack\CustomStack\obj\Debug\Collection.csprojResolveAssemblyReference.cache

@@ -4,53 +4,55 @@ namespace Collection
 {
     public class Stack<T>
     {
-        private Node<T> last = null;
+        private Node<T> top = null;
 
         public void Push (T data)
         {
             Node<T> newNode = new Node<T>(data);
 
-            if (last == null)
+            if (top == null)
             {
-                last = newNode;
-                last.previous = null;
+                top = newNode;
+                top.previous = null;
                 return;
             }
-            Node<T> first = last;
+            Node<T> first = top;
             while (first.next != null)
             {
                 first = first.next;
             }
             first.next = newNode;
-            last = first.next;
-            last.previous = first;
+            top = first.next;
+            top.previous = first;
         }
-        public void Pop()
+        public T Pop()
         {
-            if (last == null)
+            if (top == null)
             {
                 Console.WriteLine("The stack is empty");
-                return;
+                return default(T);
             }
-            Node<T> toDelete = last;
+            Node<T> toDelete = top;
+            Node<T> toReturn = toDelete;
             if (toDelete != null)
             {
-                last = toDelete.previous;
+                top = toDelete.previous;
                 toDelete = null;
             }
+            return toReturn.item;
         }
-        public void Peek()
+        public T Peek()
         {
-            if (last == null)
+            if (top == null)
             {
-                Console.WriteLine("Thestack is empty");
-                return;
+                Console.WriteLine("The stack is empty");
+                return default(T);
             }
-            Console.WriteLine(last.item);
+            return top.item;
         }
         public void Print()
         {
-            Node<T> element = last;
+            Node<T> element = top;
             while (element != null)
             {
                 Console.WriteLine(element.item);
