@@ -24,7 +24,8 @@ namespace Collection
             first.next = newNode;
             top = first.next;
             top.previous = first;
-        }
+        } 
+
         public T Pop()
         {
             if (top == null)
@@ -41,6 +42,7 @@ namespace Collection
             }
             return toReturn.item;
         }
+
         public T Peek()
         {
             if (top == null)
@@ -50,6 +52,7 @@ namespace Collection
             }
             return top.item;
         }
+
         public void Print()
         {
             Node<T> element = top;
